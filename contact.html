@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — BOQUILA</title>
+<meta name="description" content="<!-- WRITE: one-line description, ES/EN -->">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="mark" href="index.html">BOQUILA</a>
+  <div class="site-nav">
+    <ul>
+      <li><a href="about.html">
+        <span data-es>Sobre</span><span data-en>About</span>
+      </a></li>
+      <li><a href="experiences.html">
+        <span data-es>Experiencias</span><span data-en>Experiences</span>
+      </a></li>
+      <li><a href="contact.html" aria-current="page" style="opacity:1">
+        <span data-es>Contacto</span><span data-en>Contact</span>
+      </a></li>
+    </ul>
+    <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section style="padding-top: 9rem; border-top: none; min-height: 70svh;">
+    <div class="wrap two-col">
+      <div>
+        <p class="section-label"><span data-es>Contacto</span><span data-en>Contact</span></p>
+        <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); max-width: 34rem;">
+          <span data-es data-slot>[ WRITE: línea de apertura, ES ]</span>
+          <span data-en data-slot>[ WRITE: opening line, EN ]</span>
+        </h1>
+        <p class="copy-slot" style="margin-top: var(--space-2);">
+          WRITE: short line inviting enquiries — for workshop bookings,
+          press, or the CORFO/partner conversation. ES/EN.
+        </p>
+
+        <div style="margin-top: var(--space-4); font-family: var(--font-utility); font-size: 0.95rem;">
+          <p style="margin: 0 0 0.4em; color: var(--stone);">
+            <span data-es>Correo</span><span data-en>Email</span>
+          </p>
+          <p style="margin: 0 0 var(--space-3);">
+            <a href="mailto:hola@boquila.cl" style="border-bottom: 1px solid var(--line-strong);">
+              [ CONFIRM: hola@boquila.cl ]
+            </a>
+          </p>
+          <p style="margin: 0 0 0.4em; color: var(--stone);">
+            <span data-es>Ubicación</span><span data-en>Location</span>
+          </p>
+          <p style="margin: 0;">
+            Pucón, La Araucanía, Chile
+          </p>
+        </div>
+
+        <div style="margin-top: var(--space-3); font-family: var(--font-utility); font-size: 0.85rem;">
+          <a href="#" style="border-bottom: 1px solid var(--line-strong);">Instagram</a>
+        </div>
+      </div>
+
+      <div>
+        <!--
+          Form action left unimplemented deliberately: a static GitHub
+          Pages site cannot process form submissions server-side. Options
+          when ready: (1) a form service such as Formspree or Web3Forms
+          pointed at the email above, (2) a mailto: link only, kept simple.
+          Skeleton below assumes option 1; swap the action URL when chosen.
+        -->
+        <form class="contact-form" style="display: grid; gap: var(--space-2);" action="#" method="POST">
+          <label style="font-family: var(--font-utility); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone);">
+            <span data-es>Nombre</span><span data-en>Name</span>
+            <input type="text" name="name" required
+              style="display:block; width:100%; margin-top:0.4em; background:none; border:none; border-bottom:1px solid var(--line-strong); color:var(--paper); font:inherit; font-size:1rem; padding:0.5em 0;">
+          </label>
+          <label style="font-family: var(--font-utility); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone);">
+            <span data-es>Correo</span><span data-en>Email</span>
+            <input type="email" name="email" required
+              style="display:block; width:100%; margin-top:0.4em; background:none; border:none; border-bottom:1px solid var(--line-strong); color:var(--paper); font:inherit; font-size:1rem; padding:0.5em 0;">
+          </label>
+          <label style="font-family: var(--font-utility); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--stone);">
+            <span data-es>Mensaje</span><span data-en>Message</span>
+            <textarea name="message" rows="4" required
+              style="display:block; width:100%; margin-top:0.4em; background:none; border:none; border-bottom:1px solid var(--line-strong); color:var(--paper); font:inherit; font-size:1rem; padding:0.5em 0; resize:vertical;"></textarea>
+          </label>
+          <button type="submit" style="justify-self:start; margin-top: var(--space-2); background:none; border:1px solid var(--ember); color:var(--paper); font-family:var(--font-utility); font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.8em 1.6em; cursor:pointer;">
+            <span data-es>Enviar</span><span data-en>Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>&copy; <span id="year"></span> BOQUILA SpA</div>
+  <div style="display:flex; gap: var(--space-2);">
+    <a href="#">Instagram</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="lang-toggle.js"></script>
+</body>
+</html>

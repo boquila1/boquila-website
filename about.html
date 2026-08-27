@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — BOQUILA</title>
+<meta name="description" content="<!-- WRITE: one-line description, ES/EN -->">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="mark" href="index.html">BOQUILA</a>
+  <div class="site-nav">
+    <ul>
+      <li><a href="about.html" aria-current="page" style="opacity:1">
+        <span data-es>Sobre</span><span data-en>About</span>
+      </a></li>
+      <li><a href="experiences.html">
+        <span data-es>Experiencias</span><span data-en>Experiences</span>
+      </a></li>
+      <li><a href="contact.html">
+        <span data-es>Contacto</span><span data-en>Contact</span>
+      </a></li>
+    </ul>
+    <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section style="padding-top: 9rem; border-top: none;">
+    <div class="wrap">
+      <p class="section-label"><span data-es>Sobre</span><span data-en>About</span></p>
+      <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); max-width: 40rem;">
+        <span data-es data-slot>[ WRITE: titular, ES — de dónde viene el nombre, la planta que imita ]</span>
+        <span data-en data-slot>[ WRITE: headline, EN — where the name comes from, the mimicking plant ]</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ========================= ORIGIN / PLANT ========================= -->
+  <section>
+    <div class="wrap two-col">
+      <div class="image-slot ratio-4-5" data-spec="IMAGE — Boquila trifoliolata leaf, close detail showing mimicry. 1600×2000px."></div>
+      <div>
+        <p class="copy-slot">
+          WRITE: the Boquila plant story — a vine that mimics the leaves of
+          whatever tree it climbs, while remaining itself. Why that is the
+          right emblem for this project. ~100–150 words. ES and EN.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOUNDERS ============================ -->
+  <section>
+    <div class="wrap">
+      <p class="section-label"><span data-es>Quiénes somos</span><span data-en>Who we are</span></p>
+      <div class="two-col">
+        <div>
+          <div class="image-slot ratio-1-1" data-spec="IMAGE — portrait, founder 1. 1200×1200px."></div>
+          <p class="copy-slot" style="margin-top: var(--space-2);">
+            WRITE: short founder bio, ES/EN.
+          </p>
+        </div>
+        <div>
+          <div class="image-slot ratio-1-1" data-spec="IMAGE — portrait, founder 2 (Bryony). 1200×1200px."></div>
+          <p class="copy-slot" style="margin-top: var(--space-2);">
+            WRITE: short founder bio, ES/EN.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= MISSION IN FULL ======================= -->
+  <section>
+    <div class="wrap">
+      <p class="section-label"><span data-es>Misión</span><span data-en>Mission</span></p>
+      <div class="two-col">
+        <p class="copy-slot">
+          WRITE: fuller mission statement than the homepage excerpt — the
+          restoration goal, the two phases (1.0 workshop/garden in Pucón,
+          2.0 the Patagonia retreat), and why commerce funds conservation
+          rather than competing with it. ~150–220 words. ES and EN.
+        </p>
+        <div class="image-slot ratio-16-9" data-spec="IMAGE — native plant demonstration garden, wide shot. 1800×1000px."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ TIMELINE ============================ -->
+  <section>
+    <div class="wrap">
+      <p class="section-label"><span data-es>Camino</span><span data-en>Path</span></p>
+      <ul class="index-list">
+        <li>
+          <span class="index-no">01</span>
+          <div>
+            <h3><span data-es data-slot>[ BOQUILA 1.0 ]</span><span data-en data-slot>[ BOQUILA 1.0 ]</span></h3>
+            <p class="copy-slot">WRITE: one line describing the Pucón phase. ES/EN.</p>
+          </div>
+        </li>
+        <li>
+          <span class="index-no">02</span>
+          <div>
+            <h3><span data-es data-slot>[ BOQUILA 2.0 ]</span><span data-en data-slot>[ BOQUILA 2.0 ]</span></h3>
+            <p class="copy-slot">WRITE: one line describing the Patagonia retreat phase. ES/EN.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>&copy; <span id="year"></span> BOQUILA SpA</div>
+  <div style="display:flex; gap: var(--space-2);">
+    <a href="#">Instagram</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="lang-toggle.js"></script>
+</body>
+</html>

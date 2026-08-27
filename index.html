@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOQUILA</title>
+<meta name="description" content="<!-- WRITE: one-line description, ES/EN, ~150 characters, for search results and link previews -->">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="mark" href="index.html">BOQUILA</a>
+  <div class="site-nav">
+    <ul>
+      <li><a href="about.html" aria-current="page" style="opacity:1">
+        <span data-es>Sobre</span><span data-en>About</span>
+      </a></li>
+      <li><a href="experiences.html">
+        <span data-es>Experiencias</span><span data-en>Experiences</span>
+      </a></li>
+      <li><a href="contact.html">
+        <span data-es>Contacto</span><span data-en>Contact</span>
+      </a></li>
+    </ul>
+    <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+      <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" style="border-top:none; padding-top:0;">
+    <h1 class="wordmark">BOQUILA</h1>
+    <p class="tagline">
+      <span data-es>Todo lo demás es secundario</span>
+      <span data-en>Everything else is secondary</span>
+    </p>
+
+    <svg class="tendril" viewBox="0 0 220 20" aria-hidden="true">
+      <path d="M2,10 C40,2 60,18 100,10 C140,2 160,18 218,10" />
+    </svg>
+
+    <span class="scroll-hint">
+      <span data-es>Desplázate</span><span data-en>Scroll</span>
+    </span>
+  </section>
+
+  <!-- ========================= HERO IMAGE ========================= -->
+  <section style="border-top:none; padding-top:0; padding-bottom: var(--space-4);">
+    <div class="wrap">
+      <div class="image-slot ratio-21-9" data-spec="IMAGE — wide landscape, La Araucanía forest or fire-cooking scene. 2400×1000px min. This is the first image a visitor sees: it should carry the whole mood of the site.">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ MISSION ============================ -->
+  <section>
+    <div class="wrap">
+      <p class="section-label">
+        <span data-es>Misión</span><span data-en>Mission</span>
+      </p>
+      <div class="two-col">
+        <div>
+          <h2>
+            <span data-es data-slot>[ WRITE: titular de misión, ES ]</span>
+            <span data-en data-slot>[ WRITE: mission headline, EN ]</span>
+          </h2>
+          <p class="copy-slot">
+            WRITE: 2–3 sentences on ecological and cultural restoration of the
+            Valdivian temperate rainforest and pre-colonial food heritage.
+            Commerce as vehicle, not mission. ~60–90 words. ES and EN.
+          </p>
+        </div>
+        <div class="image-slot ratio-4-5" data-spec="IMAGE — native plant detail or fermentation process, portrait crop. 1600×2000px min.">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= WHAT WE OFFER ========================= -->
+  <section>
+    <div class="wrap">
+      <p class="section-label">
+        <span data-es>Qué ofrecemos</span><span data-en>What we offer</span>
+      </p>
+      <h2>
+        <span data-es data-slot>[ WRITE: intro line to BOQUILA 1.0, ES ]</span>
+        <span data-en data-slot>[ WRITE: intro line to BOQUILA 1.0, EN ]</span>
+      </h2>
+      <div class="gallery-grid" style="margin-top: var(--space-3);">
+        <div class="image-slot ratio-1-1" data-spec="IMAGE — Austral cooking technique. 1200×1200px."></div>
+        <div class="image-slot ratio-1-1" data-spec="IMAGE — traditional fermentation. 1200×1200px."></div>
+        <div class="image-slot ratio-1-1" data-spec="IMAGE — native plant garden. 1200×1200px."></div>
+      </div>
+      <p style="margin-top: var(--space-3);">
+        <a href="experiences.html" style="border-bottom: 1px solid var(--ember); font-family: var(--font-utility); font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase;">
+          <span data-es>Ver experiencias</span><span data-en>See experiences</span>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================ LOCATION ============================ -->
+  <section>
+    <div class="wrap">
+      <p class="section-label">
+        <span data-es>Dónde</span><span data-en>Where</span>
+      </p>
+      <div class="two-col">
+        <p class="copy-slot">
+          WRITE: short paragraph situating BOQUILA in Pucón, La Araucanía.
+          One or two sentences. ES and EN.
+        </p>
+        <div class="image-slot ratio-16-9" data-spec="IMAGE — Pucón / La Araucanía setting, workshop space exterior. 1800×1000px."></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>&copy; <span id="year"></span> BOQUILA SpA</div>
+  <div style="display:flex; gap: var(--space-2);">
+    <a href="#">Instagram</a>
+    <!-- WRITE/CONFIRM: add remaining social or press links once decided -->
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="lang-toggle.js"></script>
+</body>
+</html>
